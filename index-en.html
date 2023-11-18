@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Krivtsoun's portfolio</title>
-  <!-- This adds font icons -->
+  <!-- font icons -->
   <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script> 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.9.1 <link rel="stylesheet" type="text/css" href="bulma/css/bulma.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" media="all"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Bulma css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
   <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -29,6 +28,17 @@
     textArea.select();
     document.execCommand('copy');
     document.body.removeChild(textArea);
+  }
+
+    function sendWhatsAppMessage(phoneNumber) {
+    // message text 
+    var message = "Hello! I came across your portfolio and would like to write about a job.";
+
+    // Create the WhatsApp URL
+    var whatsappUrl = "https://wa.me/" + phoneNumber + "/?text=" + encodeURIComponent(message);
+
+    // Open the WhatsApp URL
+    window.open(whatsappUrl, '_blank');
   }
   </script>
 </head>
@@ -81,11 +91,22 @@
         <br>
         <div class="buttons has-addons ">
             <a href="https://github.com/Meao/" class="button ">Github</a>
-            <a href="http://linkedin.com/in/marina-krivtsoun-9a40a6167/" class="button ">LinkedIn</a>
+            <a href="http://linkedin.com/in/marina-krivtsoun/" class="button ">LinkedIn</a>
             <!-- Email Copy Button -->
-            <button class="button is-primary" onclick="copyToClipboard('marina_kts@yahoo.fr')">Copy Email Address</button>
+            <button class="button " onclick="copyToClipboard('marina_kts@yahoo.fr')">Copy Email Address</button>
+<!-- WhatsApp Message Button -->
+<button class="button is-success" onclick="sendWhatsAppMessage('+33745466955')">Send WhatsApp Message</button>
+<!-- WhatsApp Message Button -->
+<button class="button " onclick="sendWhatsAppMessage('+33745466955')">Send WhatsApp Message</button>
 
         </div>
+        <div class="buttons has-addons">
+          <a href="https://github.com/Meao/" class="button">Github</a>
+          <a href="http://linkedin.com/in/marina-krivtsoun/" class="button">LinkedIn</a>
+          <!-- Email Copy Button -->
+          <a href="javascript:void(0);" class="button " onclick="copyToClipboard('marina_kts@yahoo.fr')">Copy Email Address</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -153,14 +174,12 @@
             <h3 class="title is-4">Recent certificates</h3>
             <div class="content">
               
-              <a href="" class="button "></a>
-              <a href="" class="button "></a>
-              <a href="" class="button "></a>
+              <a href="https://stepik.org/cert/2014190" class="button ">SQL</a>
+              <a href="https://www.sololearn.com/certificates/CC-4HQIRRAC" class="button ">SQL</a>
+              <a href="https://www.sololearn.com/certificates/CT-HNSXHKNF" class="button ">Python</a>
               <a href="https://www.sololearn.com/Certificate/1060-229310/pdf/" class="button ">SQL</a>
-              <a href="" class="button "></a>
-              <a href="" class="button "></a>
-              <a href="" class="button "></a>
-              <a href="" class="button "></a>
+              <a href="https://www.sololearn.com/certificates/CT-XLLOT8L9" class="button ">Python</a>
+              <a href="https://www.sololearn.com/certificates/CT-AD6QUL0B" class="button ">Python</a>
             </div>
           </div>
         </div>
@@ -203,7 +222,6 @@
                 </figure>
               </div>
               <footer class="card-footer">
-                <a href="https://time-estim.herokuapp.com/" class="card-footer-item">Site</a>
                 <a href="https://github.com/Meao/TimeEstim" class="card-footer-item">Github</a>
               </footer>
             </div>
@@ -463,6 +481,63 @@ for selected CS EMEA Students</span>
                 <a href="https://github.com/Meao/MaterialUI" class="card-footer-item">MaterialUI - Github</a>
               </footer>
             </div>
+
+             <!-- web -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Unit "Web Design"</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">XML</span>
+                    <span class="tag is-default">Git</span>
+                    <span class="tag is-default">Eslint</span>
+                    <span class="tag is-default">JSON</span>
+                    <span class="tag is-default">PHP</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <ul>
+                    <li>Web Design </li>
+                </ul>
+              </div>
+              <footer class="card-footer is-flex-mobile">
+                <a href="https://github.com/Meao/auth-session" class="card-footer-item">Express auth - Github</a>
+                <a href="https://github.com/Meao/mailer" class="card-footer-item">Mailer - Github</a>
+                <a href="https://github.com/Meao/you" class="card-footer-item">You - Github</a>
+                <a href="https://github.com/Meao/logger" class="card-footer-item">Logger - Github</a>
+                <a href="https://github.com/Meao/MaterialUI" class="card-footer-item">MaterialUI - Github</a>
+              </footer>
+            </div>
+
+             <!-- web -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Unit "Web Design"</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">XML</span>
+                    <span class="tag is-default">Git</span>
+                    <span class="tag is-default">Eslint</span>
+                    <span class="tag is-default">JSON</span>
+                    <span class="tag is-default">PHP</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <ul>
+                    <li>Web Design </li>
+                </ul>
+              </div>
+              <footer class="card-footer is-flex-mobile is-flex-tablet is-flex-desktop-only">
+                <a href="https://github.com/Meao/auth-session" class="card-footer-item">Express auth - Github</a>
+                <a href="https://github.com/Meao/mailer" class="card-footer-item">Mailer - Github</a>
+                <a href="https://github.com/Meao/you" class="card-footer-item">You - Github</a>
+                <a href="https://github.com/Meao/logger" class="card-footer-item">Logger - Github</a>
+                <a href="https://github.com/Meao/MaterialUI" class="card-footer-item">MaterialUI - Github</a>
+              </footer>
+            </div>
+            
             <!-- mgt engineer -->
             <div class="card">
               <header class="card-header">
