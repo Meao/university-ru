@@ -21,6 +21,15 @@
               menu.classList.toggle("is-active")
           })
       })
+
+    function copyToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+  }
   </script>
 </head>
 
@@ -73,6 +82,9 @@
         <div class="buttons has-addons ">
             <a href="https://github.com/Meao/" class="button ">Github</a>
             <a href="http://linkedin.com/in/marina-krivtsoun-9a40a6167/" class="button ">LinkedIn</a>
+            <!-- Email Copy Button -->
+            <button class="button is-primary" onclick="copyToClipboard('marina_kts@yahoo.fr')">Copy Email Address</button>
+
         </div>
       </div>
     </div>
@@ -88,7 +100,7 @@
 
     <div class="columns has-same-height is-gapless">
       <div class="column">
-        <!-- Py -->
+        <!-- Python -->
         <div class="card has-text-centered">
           <div class="card-content">
             <p class="title is-3">
@@ -96,23 +108,20 @@
                     <i class="fas fa-laptop-code fa-3x"></i>
                 </span>
             </p>
-            <h3 class="title is-4">Python developer </h3>
+            <h3 class="title is-4">Analysis tools</h3>
 
             <div class="content">
             <h4 class="is-3">
-                <span class = "has-text-primary">Favorite tools</span> 
+                <span class = "has-text-primary">Code tools</span> 
             </h4>
                 <p>Numpy</p>
-                <p>Django </p>
-                <p>Chatterbot</p>
-                <p>Blender</p>
                 <p>VSCode</p>
             </div>
           </div>
         </div>
       </div>
       <div class="column">
-        <!-- Mgt -->
+        <!-- Management -->
         <div class="card has-text-centered">
           <div class="card-content">
             <p class="title is-3">
@@ -120,14 +129,12 @@
                     <i class="fas fa-user-tie fa-3x"></i>
                 </span>
             </p>
-            <h3 class="title is-4">Task manager</h3>
+            <h3 class="title is-4">Experience</h3>
 
             <div class="content">
             <h4 class="is-3">
-                <span class = "has-text-primary">RU – EN – FR</span> 
+                <span class = "has-text-primary">EN – FR</span> 
             </h4>
-                <p>6 years</p>
-                <p>Business analysis</p>
                 <p>SMART task setting</p>
                 <p>Translation</p>
             </div>
@@ -143,17 +150,17 @@
                     <i class="fas fa-tasks fa-3x"></i>
                 </span>
             </p>
-            <h3 class="title is-4">More skills</h3>
+            <h3 class="title is-4">Recent certificates</h3>
             <div class="content">
               
-              <a href="https://www.sololearn.com/Certificate/1080-229310/pdf/" class="button ">C#</a>
-              <a href="https://www.sololearn.com/Certificate/1023-229310/pdf/" class="button ">CSS</a>
-              <a href="https://www.coursera.org/account/accomplishments/certificate/BKVJAU727GHA?utm_medium=certificate&utm_source=link&utm_campaign=copybutton_certificate" class="button ">Machine Learning</a>
+              <a href="" class="button "></a>
+              <a href="" class="button "></a>
+              <a href="" class="button "></a>
               <a href="https://www.sololearn.com/Certificate/1060-229310/pdf/" class="button ">SQL</a>
-              <a href="https://www.sololearn.com/Certificate/1082-229310/pdf/" class="button ">jQuery</a>
-              <a href="https://www.sololearn.com/Certificate/1014-229310/pdf/" class="button ">HTML</a>
-              <a href="https://www.sololearn.com/Certificate/1024-229310/pdf/" class="button ">JavaScript</a>
-              <a href="https://intuit.ru/verifydiplomas/101302205" class="button ">Autocad</a>
+              <a href="" class="button "></a>
+              <a href="" class="button "></a>
+              <a href="" class="button "></a>
+              <a href="" class="button "></a>
             </div>
           </div>
         </div>
